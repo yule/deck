@@ -1,12 +1,18 @@
-1312227953
+1312229970
 Card	/home/paul/work/cards/lib/cards/card.rb	class Card
+CardTest	/home/paul/work/cards/test/card_test.rb	class CardTest 
 Cards	/home/paul/work/cards/lib/cards.rb	class Cards
 Cards	/home/paul/work/cards/lib/cards/version.rb	class Cards
-CardsTest	/home/paul/work/cards/test/cards_test.rb	class CardsTest 
 Deck	/home/paul/work/cards/lib/cards/deck.rb	class Deck
+DeckTest	/home/paul/work/cards/test/deck_test.rb	class DeckTest 
+SUITS	/home/paul/work/cards/lib/cards.rb	  SUITS =
 VERSION	/home/paul/work/cards/lib/cards/version.rb	  VERSION =
 cards	/home/paul/work/cards/lib/cards/deck.rb	  attr_reader :cards
-initialize	/home/paul/work/cards/lib/cards/deck.rb	  def initialize
-test_deck_containes_card_objects	/home/paul/work/cards/test/cards_test.rb	  def test_deck_containes_card_objects
-test_deck_object_initializes	/home/paul/work/cards/test/cards_test.rb	  def test_deck_object_initializes
-test_deck_size_is_correct	/home/paul/work/cards/test/cards_test.rb	  def test_deck_size_is_correct
+each	/home/paul/work/cards/lib/cards/deck.rb	  def each
+initialize	/home/paul/work/cards/lib/cards/deck.rb	  def initialize(options = {})
+size	/home/paul/work/cards/lib/cards/deck.rb	  def size
+test_can_create_deck_with_jokers	/home/paul/work/cards/test/deck_test.rb	  def test_can_create_deck_with_jokers
+test_card_object_initializes	/home/paul/work/cards/test/card_test.rb	  def test_card_object_initializes
+test_deck_containes_card_objects	/home/paul/work/cards/test/deck_test.rb	  def test_deck_containes_card_objects
+test_deck_object_initializes	/home/paul/work/cards/test/deck_test.rb	  def test_deck_object_initializes
+test_deck_size_is_correct	/home/paul/work/cards/test/deck_test.rb	  def test_deck_size_is_correct
