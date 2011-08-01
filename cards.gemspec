@@ -1,10 +1,10 @@
 # -*- encoding: utf-8 -*-
 $:.push File.expand_path("../lib", __FILE__)
-require "deck/version"
+require "cards/version"
 
 Gem::Specification.new do |s|
   s.name        = "deck"
-  s.version     = Deck::VERSION
+  s.version     = Cards::VERSION
   s.authors     = ["paul"]
   s.email       = ["paul@dryule.com"]
   s.homepage    = ""

@@ -1,7 +1,7 @@
 require 'test/unit'
-require 'deck'
+require 'cards'
 
-class DeckTest < Test::Unit::TestCase
+class CardsTest < Test::Unit::TestCase
   
   def test_deck_object_initializes
     assert_instance_of Deck, Deck.new 

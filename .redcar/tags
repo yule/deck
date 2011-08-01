@@ -1,0 +1,12 @@
+1312227916
+Card	/home/paul/work/cards/lib/cards/card.rb	class Card
+Cards	/home/paul/work/cards/lib/cards.rb	class Cards
+Cards	/home/paul/work/cards/lib/cards/version.rb	class Cards
+CardsTest	/home/paul/work/cards/test/cards_test.rb	class CardsTest 
+Deck	/home/paul/work/cards/lib/cards/deck.rb	class Deck
+VERSION	/home/paul/work/cards/lib/cards/version.rb	  VERSION =
+cards	/home/paul/work/cards/lib/cards/deck.rb	  attr_reader :cards
+initialize	/home/paul/work/cards/lib/cards/deck.rb	  def initialize
+test_deck_containes_card_objects	/home/paul/work/cards/test/cards_test.rb	  def test_deck_containes_card_objects
+test_deck_object_initializes	/home/paul/work/cards/test/cards_test.rb	  def test_deck_object_initializes
+test_deck_size_is_correct	/home/paul/work/cards/test/cards_test.rb	  def test_deck_size_is_correct
