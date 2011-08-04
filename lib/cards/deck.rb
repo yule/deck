@@ -1,11 +1,8 @@
 
 require 'cards'
-require 'cards/card'
 
 class Deck
-  
 
-  
   include Enumerable
   
   attr_reader :cards
@@ -18,9 +15,13 @@ class Deck
     options = defaults.merge(options)
     
     @cards = []
-    52.times do |n|
-      self << Card.new
-    end
+    Cards::SUITS.each{|s|
+      Cards::RANKS.each{|r|
+        self << Card.new(r,s)
+      }
+    }
+    
+    
     
     if options[:jokers]
       self << Card.new
@@ -28,6 +29,10 @@ class Deck
     end  
     
   end
+  
+  def shuffle!
+    100.times { @cards.push @cards.delete_at(rand(size-1)) }
+  end  
   
   def each
     @cards.each { |card| yield card } 
@@ -37,9 +42,18 @@ class Deck
     @cards << card
   end  
   
+  
   def size
     @cards.size
   end  
+  
+  alias :length :size
+  
+  def draw
+    cards.shift
+  end  
+  
+  
 
 end
 
