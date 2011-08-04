@@ -10,5 +10,7 @@ Gem::Specification.new do |s|
   s.homepage    = ""
   s.summary     = %q{a human readable class for a deck of cards}
   s.description = %q{represent playing cards, hands, decks and games}
+  s.files = Dir['lib/**/*.rb']
+  s.files += Dir['test/**/*']
   s.require_paths = ["lib"]
 end
