@@ -27,6 +27,7 @@ class Game
         hands[n-1] << deck.draw
       end  
     end  
+    deck
   end
   
 end  

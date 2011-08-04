@@ -7,7 +7,7 @@ class Hand < Deck
   end
   
   def inspect
-    @cards.map{|e| e.to_s}
+    @cards.inspect
   end  
   
 end
