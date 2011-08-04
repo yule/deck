@@ -1,5 +1,4 @@
 
-require 'cards'
 
 
 class Game

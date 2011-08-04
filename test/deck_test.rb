@@ -1,5 +1,5 @@
-require 'test/unit'
-require 'cards'
+require 'helper'
+
 
 class DeckTest < Test::Unit::TestCase
   

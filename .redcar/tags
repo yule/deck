@@ -1,38 +1,22 @@
-1312490868
-Card	/home/paul/work/cards/lib/cards/card.rb	class Card
+1312491640
 CardTest	/home/paul/work/cards/test/card_test.rb	class CardTest 
-Cards	/home/paul/work/cards/lib/cards.rb	class Cards
-Cards	/home/paul/work/cards/lib/cards/version.rb	class Cards
-Deck	/home/paul/work/cards/lib/cards/deck.rb	class Deck
+Deck	/home/paul/work/cards/lib/deck.rb	class Deck
+Deck	/home/paul/work/cards/lib/deck/deck.rb	class Deck
+Deck	/home/paul/work/cards/lib/deck/version.rb	class Deck
 DeckTest	/home/paul/work/cards/test/deck_test.rb	class DeckTest 
-Game	/home/paul/work/cards/lib/cards/game.rb	class Game
 GameTest	/home/paul/work/cards/test/game_test.rb	class GameTest 
-Hand	/home/paul/work/cards/lib/cards/hand.rb	class Hand 
 HandTest	/home/paul/work/cards/test/hand_test.rb	class HandTest 
-RANKS	/home/paul/work/cards/lib/cards.rb	  RANKS =
-SUITS	/home/paul/work/cards/lib/cards.rb	  SUITS =
-VERSION	/home/paul/work/cards/lib/cards/version.rb	  VERSION =
-cards	/home/paul/work/cards/lib/cards/deck.rb	  attr_reader :cards
-deal	/home/paul/work/cards/lib/cards/game.rb	  def deal(shuffle = true)
+RANKS	/home/paul/work/cards/lib/deck.rb	  RANKS =
+SUITS	/home/paul/work/cards/lib/deck.rb	  SUITS =
+VERSION	/home/paul/work/cards/lib/deck/version.rb	  VERSION =
+cards	/home/paul/work/cards/lib/deck/deck.rb	  attr_reader :cards
 deals_ok	/home/paul/work/cards/test/game_test.rb	  def deals_ok
-deck	/home/paul/work/cards/lib/cards/game.rb	  attr_reader :deck, :hands, :number_of_hands, :number_of_cards
-draw	/home/paul/work/cards/lib/cards/deck.rb	  def draw
-each	/home/paul/work/cards/lib/cards/card.rb	  def each
-each	/home/paul/work/cards/lib/cards/deck.rb	  def each
-hands	/home/paul/work/cards/lib/cards/game.rb	  attr_reader :deck, :hands, :number_of_hands, :number_of_cards
-initialize	/home/paul/work/cards/lib/cards/card.rb	  def initialize(rank = 'Joker', suit = 'None')
-initialize	/home/paul/work/cards/lib/cards/deck.rb	  def initialize(options = {})
-initialize	/home/paul/work/cards/lib/cards/game.rb	  def initialize(hands = 3, cards = 3)
-initialize	/home/paul/work/cards/lib/cards/hand.rb	  def initialize(options = {})
-length	/home/paul/work/cards/lib/cards/deck.rb	  alias :length
-number_of_cards	/home/paul/work/cards/lib/cards/game.rb	  attr_reader :deck, :hands, :number_of_hands, :number_of_cards
-number_of_hands	/home/paul/work/cards/lib/cards/game.rb	  attr_reader :deck, :hands, :number_of_hands, :number_of_cards
-rank	/home/paul/work/cards/lib/cards/card.rb	  attr_reader :suit, :rank
-rank	/home/paul/work/cards/lib/cards/card.rb	  def rank
-shuffle!	/home/paul/work/cards/lib/cards/deck.rb	  def shuffle!
-size	/home/paul/work/cards/lib/cards/deck.rb	  def size
-suit	/home/paul/work/cards/lib/cards/card.rb	  attr_reader :suit, :rank
-suit	/home/paul/work/cards/lib/cards/card.rb	  def suit
+draw	/home/paul/work/cards/lib/deck/deck.rb	  def draw
+each	/home/paul/work/cards/lib/deck/deck.rb	  def each
+initialize	/home/paul/work/cards/lib/deck/deck.rb	  def initialize(options = {})
+length	/home/paul/work/cards/lib/deck/deck.rb	  alias :length
+shuffle!	/home/paul/work/cards/lib/deck/deck.rb	  def shuffle!
+size	/home/paul/work/cards/lib/deck/deck.rb	  def size
 test_can_create_deck_with_jokers	/home/paul/work/cards/test/deck_test.rb	  def test_can_create_deck_with_jokers
 test_card_object_initializes	/home/paul/work/cards/test/card_test.rb	  def test_card_object_initializes
 test_deck_containes_card_objects	/home/paul/work/cards/test/deck_test.rb	  def test_deck_containes_card_objects
@@ -51,5 +35,3 @@ test_should_have_correct_rank_word	/home/paul/work/cards/test/card_test.rb	  def
 test_should_have_correct_suit	/home/paul/work/cards/test/card_test.rb	  def test_should_have_correct_suit
 test_should_have_correct_suit_non_case	/home/paul/work/cards/test/card_test.rb	  def test_should_have_correct_suit_non_case
 test_should_initialize_with_number	/home/paul/work/cards/test/card_test.rb	  def test_should_initialize_with_number
-to_i	/home/paul/work/cards/lib/cards/card.rb	  def to_i
-to_s	/home/paul/work/cards/lib/cards/card.rb	  def to_s

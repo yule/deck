@@ -1,6 +1,3 @@
-
-require 'cards'
-
 class Deck
 
   include Enumerable
@@ -15,8 +12,8 @@ class Deck
     options = defaults.merge(options)
     
     @cards = []
-    Cards::SUITS.each{|s|
-      Cards::RANKS.each{|r|
+    Deck::SUITS.each{|s|
+      Deck::RANKS.each{|r|
         self << Card.new(r,s)
       }
     }

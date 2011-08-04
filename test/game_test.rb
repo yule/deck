@@ -1,5 +1,4 @@
-require 'test/unit'
-require 'cards'
+require 'helper'
 
 class GameTest < Test::Unit::TestCase
   

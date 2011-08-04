@@ -1,15 +1,15 @@
 # -*- encoding: utf-8 -*-
 $:.push File.expand_path("../lib", __FILE__)
-require "cards/version"
+require "deck/version"
 
 Gem::Specification.new do |s|
   s.name        = "deck"
-  s.version     = Cards::VERSION
+  s.version     = Deck::VERSION
   s.authors     = ["paul"]
   s.email       = ["paul@dryule.com"]
   s.homepage    = ""
-  s.summary     = %q{represent playing cards}
-  s.description = %q{a human readable class for a deck of cards}
+  s.summary     = %q{a human readable class for a deck of cards}
+  s.description = %q{represent playing cards, hands, decks and games}
 
   s.rubyforge_project = "deck"
 
