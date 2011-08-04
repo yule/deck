@@ -15,7 +15,9 @@ class Game
     end
   end  
   
-  
+  def inspect
+    "#{to_s} with #{@number_of_hands} hands each with #{@number_of_cards} cards"
+  end  
   
   def deal(shuffle = true)
     deck.shuffle! if shuffle
@@ -26,4 +28,5 @@ class Game
     end  
   end
   
+  alias :deal! :deal
 end  

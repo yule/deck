@@ -31,6 +31,10 @@ class Deck
     100.times { @cards.push @cards.delete_at(rand(size-1)) }
   end  
   
+  def inspect
+    to_s  
+  end
+  
   def each
     @cards.each { |card| yield card } 
 	end

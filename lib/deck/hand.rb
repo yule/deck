@@ -6,4 +6,8 @@ class Hand < Deck
     @cards = []
   end
   
+  def inspect
+    @cards.each{|e| e.to_s}
+  end  
+  
 end
