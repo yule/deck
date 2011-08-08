@@ -1,6 +1,3 @@
-
-
-
 class Game
   
   attr_reader :deck, :hands, :number_of_hands, :number_of_cards
@@ -22,12 +19,12 @@ class Game
   
   def deal(shuffle = true)
     deck.shuffle! if shuffle
-    (1..hands.size).each do |n|
       number_of_cards.times do
-        hands[n-1] << deck.draw
+        (1..hands.size).each do |n|
+          hands[n-1] << deck.draw
+        end  
       end  
-    end  
-    deck
+    self
   end
   
 end  

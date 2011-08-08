@@ -1,5 +1,3 @@
-
-
 class Hand < Deck
   
   def initialize(options = {})

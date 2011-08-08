@@ -28,7 +28,7 @@ class Deck
   end
   
   def shuffle!
-    100.times { @cards.push @cards.delete_at(rand(size-1)) }
+    1000.times { @cards.push @cards.delete_at(rand(size-1)) }
   end  
   
   def inspect

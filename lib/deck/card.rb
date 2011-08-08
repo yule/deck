@@ -1,5 +1,3 @@
-
-
 class Card
 
   include Enumerable
