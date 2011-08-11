@@ -49,5 +49,12 @@ class CardTest < Test::Unit::TestCase
     assert card > card2
   end  
   
+  def test_can_increase_card
+    card = Card.new(10, "h")
+    card+= 1
+    assert_equal "Jack of Hearts", card.to_s
+  end  
+  
+  
 
 end

@@ -4,9 +4,18 @@ class Card
   
   attr_reader :suit, :rank
   
-  def initialize(rank = 'Joker', suit = 'None')
+  def initialize(ran = 'Joker', suit = 'None')
+    #TODO clean this up
+    ran = "Jack" if ran == 11
+    ran = "Queen" if ran == 12
+    ran = "King" if ran == 13
+    ran = "Ace" if ran == 14
+    suit = "Hearts" if suit == "H"
+    suit = "Clubs" if suit == "C"
+    suit = "Spades" if suit == "S"
+    suit = "Diamonds" if suit == "D"
     @suit = suit
-    @rank = rank
+    @rank = ran
   end
   
   
@@ -29,6 +38,15 @@ class Card
     @suit.capitalize
   end  
   
+  def + (num)
+    Card.new(rank.to_i + num.to_i, suit)
+  end
+  
+  def - (num)
+    Card.new(rank.to_i - num.to_i, suit)
+  end
+
+
   def to_s
     "#{rank} of #{suit}"
   end  
@@ -67,7 +85,10 @@ class Card
         15
       else @rank.to_i  
     end  
-  end  
+  end
+  
+  
+  
   
 end
 
